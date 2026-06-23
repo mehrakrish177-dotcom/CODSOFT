@@ -19,7 +19,7 @@ while True:
     user_choice = input("Enter your choice: ").lower()
 
     if user_choice not in choices:
-        print("❌ Invalid choice! Please enter rock, paper, or scissors")
+        print(" Invalid choice Please enter rock, paper, or scissors")
         continue
 
     computer_choice = random.choice(choices)
@@ -36,11 +36,11 @@ while True:
         (user_choice == "paper" and computer_choice == "rock") or
         (user_choice == "scissors" and computer_choice == "paper")
     ):
-        print("🎉 You Win!")
+        print(" You Win!")
         user_score += 1
 
     else:
-        print("💻 Computer Wins!")
+        print(" Computer Wins")
         computer_score += 1
 
     print("\nCurrent Score")
